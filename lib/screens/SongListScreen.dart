@@ -83,7 +83,7 @@ class _SongListScreenState extends State<SongListScreen> {
           Row(
             children: [
               Container(
-                padding: EdgeInsets.fromLTRB(10, 5, 5, 5),
+                padding: EdgeInsets.fromLTRB(20.0, 0.0, 5.0, 5.0),
                 child: DropdownButton<String>(
                   value: chartType,
                   icon: Icon(Icons.arrow_downward),
@@ -113,7 +113,7 @@ class _SongListScreenState extends State<SongListScreen> {
                 ),
               ),
               Container(
-                padding: EdgeInsets.all(5),
+                padding: EdgeInsets.fromLTRB(5.0, 0.0, 5.0, 5.0),
                 child: DropdownButton<String>(
                   value: levelValue,
                   icon: Icon(Icons.arrow_downward),
@@ -143,7 +143,7 @@ class _SongListScreenState extends State<SongListScreen> {
               ),
               Expanded(
                 child: Container(
-                  padding: EdgeInsets.only(left: 5, right: 10),
+                  padding: EdgeInsets.fromLTRB(5.0, 0.0, 20.0, 5.0),
                   child: SizedBox(
                     width: 10,
                     height: 30,

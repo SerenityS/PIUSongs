@@ -92,7 +92,7 @@ class _SongDetailScreenState extends State<SongDetailScreen>
                   fontWeight: FontWeight.w700),
               indicator: UnderlineTabIndicator(
                 borderSide: BorderSide(color: Colors.grey, width: 2.0),
-                insets: EdgeInsets.fromLTRB(45.0, 45.0, 45.0, 0.0),
+                insets: EdgeInsets.fromLTRB(45.0, 0.0, 45.0, 0.0),
               ),
               unselectedLabelColor: Color(0xFFc9c9c9),
               unselectedLabelStyle: TextStyle(
@@ -106,7 +106,7 @@ class _SongDetailScreenState extends State<SongDetailScreen>
               ],
             ),
           ),
-          SizedBox(height: 15),
+          SizedBox(height: 18),
           Expanded(
             child: TabBarView(
               controller: _tabController,
@@ -155,7 +155,7 @@ class _SongDetailScreenState extends State<SongDetailScreen>
                 ),
                 SingleChildScrollView(
                   child: Container(
-                    margin: EdgeInsets.fromLTRB(20.0, 5.0, 5.0, 5.0),
+                    margin: EdgeInsets.fromLTRB(18.0, 5.0, 5.0, 5.0),
                     child: Row(
                       children: [
                         Column(
