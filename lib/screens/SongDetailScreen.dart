@@ -51,7 +51,6 @@ class _SongDetailScreenState extends State<SongDetailScreen>
         child: AppBar(
           elevation: 0,
           backgroundColor: Colors.transparent,
-          iconTheme: IconThemeData(color: Colors.black),
         ),
       ),
       body: Column(
@@ -88,7 +87,7 @@ class _SongDetailScreenState extends State<SongDetailScreen>
                   color: Color(0xFFc9c9c9),
                   fontWeight: FontWeight.w700),
               indicator: UnderlineTabIndicator(
-                borderSide: BorderSide(color: Colors.blueAccent, width: 2.0),
+                borderSide: BorderSide(color: Colors.grey, width: 2.0),
                 insets: EdgeInsets.fromLTRB(45.0, 45.0, 45.0, 0.0),
               ),
               unselectedLabelColor: Color(0xFFc9c9c9),

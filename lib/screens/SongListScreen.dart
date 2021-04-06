@@ -89,10 +89,9 @@ class _SongListScreenState extends State<SongListScreen> {
                   icon: Icon(Icons.arrow_downward),
                   iconSize: 24,
                   elevation: 16,
-                  style: TextStyle(color: Colors.blue),
                   underline: Container(
                     height: 2,
-                    color: Colors.blueAccent,
+                    color: Colors.grey,
                   ),
                   onChanged: (newValue) {
                     setState(
@@ -120,10 +119,9 @@ class _SongListScreenState extends State<SongListScreen> {
                   icon: Icon(Icons.arrow_downward),
                   iconSize: 24,
                   elevation: 16,
-                  style: TextStyle(color: Colors.blue),
                   underline: Container(
                     height: 2,
-                    color: Colors.blueAccent,
+                    color: Colors.grey,
                   ),
                   onChanged: (newValue) {
                     setState(
@@ -149,7 +147,7 @@ class _SongListScreenState extends State<SongListScreen> {
                   child: SizedBox(
                     width: 10,
                     height: 30,
-                    child: TextField(
+                    child: TextFormField(
                       controller: _searchString,
                       onChanged: (text) {
                         setState(
