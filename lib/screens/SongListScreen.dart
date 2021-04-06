@@ -190,8 +190,13 @@ class _SongListScreenState extends State<SongListScreen> {
                         fit: BoxFit.fill,
                       ),
                     ),
-                    title: Text(songTitleKo),
-                    subtitle: Text(songArtistKo),
+                    title: Text(
+                      songTitleKo,
+                      overflow: TextOverflow.ellipsis,
+                    ),
+                    subtitle: Text(
+                      songArtistKo,
+                    ),
                     onTap: () {
                       Get.toNamed('/songdetail',
                           arguments: songListData[index]);
