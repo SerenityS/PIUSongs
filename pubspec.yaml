@@ -24,7 +24,10 @@ dependencies:
   flutter:
     sdk: flutter
 
+  fluttertoast: ^8.0.3
   get: ^4.1.3
+  url_encoder: ^0.0.3
+  url_launcher: ^6.0.3
 
 dev_dependencies:
   flutter_test:
