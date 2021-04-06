@@ -184,10 +184,12 @@ class _SongListScreenState extends State<SongListScreen> {
                             .contains(_searchString.text.toLowerCase()))) {
                   return ListTile(
                     dense: false,
-                    leading: CircleAvatar(
-                      radius: 28.0,
-                      backgroundImage:
-                          AssetImage('assets/songJacket/$songNo.png'),
+                    leading: ClipRRect(
+                      borderRadius: BorderRadius.circular(8.0),
+                      child: Image.asset(
+                        'assets/songJacket/$songNo.png',
+                        fit: BoxFit.fill,
+                      ),
                     ),
                     title: Text(songTitleKo),
                     subtitle: Text(songArtistKo),
