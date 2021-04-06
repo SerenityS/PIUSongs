@@ -2,7 +2,7 @@
     package="com.qwertycvb.piu_songs">
     <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES"/>
     <application
-        android:label="piu_songs"
+        android:label="PIU Songs"
         android:icon="@mipmap/launcher_icon">
         <activity
             android:name=".MainActivity"
