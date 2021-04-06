@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:piu_songs/screens/SongDetailScreen.dart';
 import 'package:piu_songs/screens/SongListScreen.dart';
 
 void main() {
@@ -19,6 +20,7 @@ class MyApp extends StatelessWidget {
       initialRoute: '/songlist',
       getPages: [
         GetPage(name: '/songlist', page: () => SongListScreen()),
+        GetPage(name: '/songdetail', page: () => SongDetailScreen()),
       ],
     );
   }

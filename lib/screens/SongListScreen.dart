@@ -2,6 +2,7 @@ import 'dart:convert';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:get/get.dart';
 
 class SongListScreen extends StatefulWidget {
   @override
@@ -163,7 +164,7 @@ class _SongListScreenState extends State<SongListScreen> {
               )
             ],
           ),
-          Expanded(
+          Flexible(
             child: ListView.builder(
               itemCount: songListData.length,
               itemBuilder: (BuildContext context, int index) {
@@ -193,6 +194,10 @@ class _SongListScreenState extends State<SongListScreen> {
                     ),
                     title: Text(songTitleKo),
                     subtitle: Text(songArtistKo),
+                    onTap: () {
+                      Get.toNamed('/songdetail',
+                          arguments: songListData[index]);
+                    },
                   );
                 } else {
                   return SizedBox(height: 0);
