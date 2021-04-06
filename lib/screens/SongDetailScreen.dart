@@ -59,7 +59,6 @@ class _SongDetailScreenState extends State<SongDetailScreen>
             padding: const EdgeInsets.fromLTRB(25.0, 0.0, 25.0, 0.0),
             child: Text(
               "${songData['songTitle_ko']}",
-              overflow: TextOverflow.ellipsis,
               style: TextStyle(
                 fontSize: 25,
                 fontWeight: FontWeight.bold,
