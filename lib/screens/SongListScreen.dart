@@ -29,7 +29,9 @@ class _SongListScreenState extends State<SongListScreen> {
 
   Future loadSongJsonData() async {
     var jsonText = await rootBundle.loadString('assets/json/songLists.json');
-    songListData = json.decode(jsonText);
+    setState(
+      () => songListData = json.decode(jsonText),
+    );
   }
 
   makeLevelList() async {
