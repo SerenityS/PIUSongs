@@ -36,6 +36,7 @@ class MyApp extends StatelessWidget {
           color: Colors.black,
         ),
       ),
+      themeMode: ThemeMode.light,
       title: 'PIU Songs',
       initialRoute: '/songlist',
       getPages: [
