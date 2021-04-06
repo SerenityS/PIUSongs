@@ -39,7 +39,7 @@ class _SongListScreenState extends State<SongListScreen> {
         },
       );
     } else {
-      var jsonText = await rootBundle.loadString('assets$chartType.json');
+      var jsonText = await rootBundle.loadString('assets/json/$chartType.json');
       level = json.decode(jsonText);
       levels = [];
 
