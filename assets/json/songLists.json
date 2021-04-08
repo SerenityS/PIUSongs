@@ -483,7 +483,8 @@
                 "S03": "ANDAMIRO",
                 "S05": "ANDAMIRO",
                 "S08": "ANDAMIRO",
-                "S12": "ANDAMIRO"
+                "S12": "ANDAMIRO",
+                "S17": "SUNNY"
             }
         },
         {
@@ -678,6 +679,7 @@
             "songTitle_ko": "엠페러",
             "songType": "Arcade",
             "stepChart": {
+                "C02": "SUNNY",
                 "D17": "ANDAMIRO",
                 "DP03": "JKD",
                 "S02": "HP",
@@ -855,9 +857,11 @@
             "songType": "Arcade",
             "stepChart": {
                 "D07": "ANDAMIRO",
+                "D20": "OSING",
                 "S04": "ANDAMIRO",
                 "S06": "ANDAMIRO",
-                "S12": "ANDAMIRO"
+                "S12": "ANDAMIRO",
+                "S20": "OSING"
             }
         },
         {
@@ -1032,6 +1036,7 @@
             "songType": "Arcade",
             "stepChart": {
                 "D15": "HP",
+                "D18": "HP",
                 "DP04": "JKD",
                 "DP06": "ANDAMIRO",
                 "S02": "HP",
@@ -3680,6 +3685,7 @@
             "stepChart": {
                 "D09": "ANDAMIRO",
                 "D17": "SANDSTORM",
+                "D21": "SUNNY",
                 "S04": "ANDAMIRO",
                 "S06": "ANDAMIRO",
                 "S08": "ANDAMIRO",
@@ -4402,6 +4408,7 @@
                 "D14": "BPM",
                 "D15": "E. HOLNIKER, ANDAMIRO",
                 "D19": "BPM",
+                "D22": "OSING",
                 "S11": "KAHRUNYA, ANDAMIRO",
                 "S13": "KAHRUNYA, ANDAMIRO",
                 "S17": "BPM",
@@ -4971,6 +4978,7 @@
             "songTitle_ko": "차이니즈 레스토랑",
             "songType": "Arcade",
             "stepChart": {
+                "C03": "SUNNY",
                 "D10": "EXC",
                 "D16": "ALEXROSE",
                 "D19": "EXC",
@@ -6140,6 +6148,7 @@
                 "S04": "NIMGO",
                 "S07": "NIMGO",
                 "S12": "NIMGO",
+                "S15": "BME",
                 "S18": "NIMGO",
                 "S21": "NIMGO"
             }
@@ -8433,6 +8442,7 @@
             "songType": "Remix",
             "stepChart": {
                 "D24": "NIMGO",
+                "S18": "BME",
                 "S22": "NIMGO"
             }
         },
@@ -8657,6 +8667,7 @@
                 "D12": "AEVILUX",
                 "D18": "AEVILUX",
                 "D21": "AEVILUX",
+                "D23": "AEVILUX",
                 "DP05": "Z_AL",
                 "S08": "AEVILUX",
                 "S16": "AEVILUX",
@@ -8946,6 +8957,7 @@
                 "D12": "OSING",
                 "D18": "OSING",
                 "D22": "OSING",
+                "D24": "WINDFORCE",
                 "DP04": "IMSORRY",
                 "S06": "OSING",
                 "S12": "OSING",
@@ -9320,6 +9332,7 @@
             "songTitle_ko": "유 앤 아이",
             "songType": "Arcade",
             "stepChart": {
+                "C02": "SUNNY",
                 "D14": "EXC",
                 "D17": "OSING",
                 "D20": "OSING",
@@ -9673,7 +9686,13 @@
             "songTitle_ko": "웨딩 크래셔 - SHORT CUT -",
             "songType": "Short Cut",
             "stepChart": {
+                "D06": "SUNNY",
+                "D13": "SUNNY",
                 "D20": "EXC",
+                "S04": "SUNNY",
+                "S07": "SUNNY",
+                "S11": "SUNNY",
+                "S15": "SUNNY",
                 "S18": "EXC"
             }
         },
@@ -11503,6 +11522,150 @@
                 "D24": "BME",
                 "S20": "BME",
                 "S22": "BME"
+            }
+        },
+        {
+            "songArtist_en": "A.V.",
+            "songArtist_ko": "A.V.",
+            "songBpm": "140",
+            "songChannel": "ORIGINAL",
+            "songID": "",
+            "songNo": 7485,
+            "songSeries": "Fiesta EX",
+            "songSeriesChannel": "Fiesta to Fiesta 2",
+            "songTitle_en": "Night Duty",
+            "songTitle_ko": "야근",
+            "songType": "Arcade",
+            "stepChart": {
+                "D08": "SUNNY",
+                "D15": "SUNNY",
+                "D20": "SUNNY",
+                "S03": "SUNNY",
+                "S06": "SUNNY",
+                "S09": "SUNNY",
+                "S14": "SUNNY",
+                "S17": "ANDAMIRO",
+                "S19": "SUNNY"
+            }
+        },
+        {
+            "songArtist_en": "t+pazolite",
+            "songArtist_ko": "t+pazolite",
+            "songBpm": "160",
+            "songChannel": "World Music",
+            "songID": "",
+            "songNo": 7486,
+            "songSeries": "XX",
+            "songSeriesChannel": "XX",
+            "songTitle_en": "Slapstick Parfait",
+            "songTitle_ko": "슬랩스틱 파르페",
+            "songType": "Arcade",
+            "stepChart": {
+                "D12": "SUNNY",
+                "D18": "SUNNY",
+                "D21": "SUNNY",
+                "S03": "SUNNY",
+                "S07": "SUNNY",
+                "S10": "SUNNY",
+                "S16": "SUNNY",
+                "S19": "SUNNY"
+            }
+        },
+        {
+            "songArtist_en": "Ginkiha",
+            "songArtist_ko": "Ginkiha",
+            "songBpm": "187",
+            "songChannel": "World Music",
+            "songID": "",
+            "songNo": 7487,
+            "songSeries": "XX",
+            "songSeriesChannel": "XX",
+            "songTitle_en": "Paved Garden",
+            "songTitle_ko": "페이브 가든",
+            "songType": "Arcade",
+            "stepChart": {
+                "D13": "OSING",
+                "D17": "OSING",
+                "D21": "OSING",
+                "D24": "OSING",
+                "S08": "OSING",
+                "S12": "OSING",
+                "S16": "OSING",
+                "S19": "OSING",
+                "S22": "OSING"
+            }
+        },
+        {
+            "songArtist_en": "Hommarju",
+            "songArtist_ko": "Hommarju",
+            "songBpm": "110",
+            "songChannel": "World Music",
+            "songID": "",
+            "songNo": 7488,
+            "songSeries": "XX",
+            "songSeriesChannel": "XX",
+            "songTitle_en": "Pop Sequence",
+            "songTitle_ko": "팝 시퀀스",
+            "songType": "Arcade",
+            "stepChart": {
+                "D12": "AEVILUX",
+                "D19": "AEVILUX",
+                "D23": "AEVILUX",
+                "DP22": "AEVILUX",
+                "S05": "AEVILUX",
+                "S07": "AEVILUX",
+                "S11": "AEVILUX",
+                "S15": "AEVILUX",
+                "S21": "AEVILUX",
+                "SP18": "AEVILUX"
+            }
+        },
+        {
+            "songArtist_en": "t+pazolite+Ginkiha+Hommarju",
+            "songArtist_ko": "t+pazolite+Ginkiha+Hommarju",
+            "songBpm": "180",
+            "songChannel": "World Music",
+            "songID": "",
+            "songNo": 7489,
+            "songSeries": "XX",
+            "songSeriesChannel": "XX",
+            "songTitle_en": "Crossing Delta",
+            "songTitle_ko": "크로싱 델타",
+            "songType": "Arcade",
+            "stepChart": {
+                "D03": "SPHAM",
+                "D04": "SPHAM",
+                "D05": "SPHAM",
+                "D06": "SPHAM",
+                "DP01": "SPHAM",
+                "S01": "SPHAM",
+                "S02": "SPHAM",
+                "S03": "SPHAM",
+                "S04": "SPHAM"
+            }
+        },
+        {
+            "songArtist_en": "HyuN vs lixound",
+            "songArtist_ko": "HyuN vs lixound",
+            "songBpm": "194",
+            "songChannel": "Original",
+            "songID": "",
+            "songNo": 7490,
+            "songSeries": "XX",
+            "songSeriesChannel": "XX",
+            "songTitle_en": "Harmagedon",
+            "songTitle_ko": "아마겟돈",
+            "songType": "Arcade",
+            "stepChart": {
+                "S04": "SUNNY",
+                "S06": "SUNNY",
+                "S10": "SUNNY",
+                "S16": "SUNNY",
+                "S19": "SUNNY",
+                "S22": "SUNNY",
+                "D13": "SUNNY",
+                "D21": "SUNNY",
+                "D24": "SUNNY"
             }
         },
         {
