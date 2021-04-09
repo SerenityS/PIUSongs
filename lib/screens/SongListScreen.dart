@@ -72,6 +72,135 @@ class _SongListScreenState extends State<SongListScreen> {
     }
   }
 
+  Widget searchBar() {
+    return Row(
+      children: [
+        Container(
+          padding: EdgeInsets.fromLTRB(20.0, 0.0, 5.0, 5.0),
+          child: DropdownButton<String>(
+            value: chartType,
+            icon: Icon(Icons.arrow_downward),
+            iconSize: 24,
+            elevation: 16,
+            underline: Container(
+              height: 2,
+              color: Colors.grey,
+            ),
+            onChanged: (newValue) {
+              setState(
+                () {
+                  chartType = newValue!;
+                  makeLevelList();
+                },
+              );
+            },
+            items: <String>['ALL', 'S', 'D', 'SP', 'DP', 'CO-OP']
+                .map<DropdownMenuItem<String>>(
+              (String value) {
+                return DropdownMenuItem<String>(
+                  value: value,
+                  child: Text(value),
+                );
+              },
+            ).toList(),
+          ),
+        ),
+        Container(
+          padding: EdgeInsets.fromLTRB(5.0, 0.0, 5.0, 5.0),
+          child: DropdownButton<String>(
+            value: levelValue,
+            icon: Icon(Icons.arrow_downward),
+            iconSize: 24,
+            elevation: 16,
+            underline: Container(
+              height: 2,
+              color: Colors.grey,
+            ),
+            onChanged: (newValue) {
+              setState(
+                () {
+                  levelValue = newValue!;
+                  makeSongList();
+                },
+              );
+            },
+            items: levels.map(
+              (String value) {
+                return DropdownMenuItem<String>(
+                  value: value,
+                  child: Text(value),
+                );
+              },
+            ).toList(),
+          ),
+        ),
+        Expanded(
+          child: Container(
+            padding: EdgeInsets.fromLTRB(5.0, 0.0, 20.0, 5.0),
+            child: SizedBox(
+              width: 10,
+              height: 30,
+              child: TextFormField(
+                controller: _searchString,
+                onChanged: (text) {
+                  setState(
+                    () {
+                      SongListScreen();
+                    },
+                  );
+                },
+              ),
+            ),
+          ),
+        )
+      ],
+    );
+  }
+
+  Widget songListView() {
+    return Flexible(
+      child: ListView.builder(
+        itemCount: songListData.length,
+        itemBuilder: (BuildContext context, int index) {
+          var songNo = songListData[index]['songNo'];
+          var songTitleKo = songListData[index]['songTitle_ko'];
+          var songTitleEn = songListData[index]['songTitle_en'].toLowerCase();
+          var songArtistKo = songListData[index]['songArtist_ko'];
+          var songArtistEn = songListData[index]['songArtist_en'].toLowerCase();
+
+          if ((songNoList[0] == 'ALL' || songNoList.contains(songNo)) &&
+              (songTitleKo.contains(_searchString.text) ||
+                  songTitleEn.contains(_searchString.text.toLowerCase()) ||
+                  songArtistKo.contains(_searchString.text) ||
+                  songArtistEn.contains(_searchString.text.toLowerCase()))) {
+            return ListTile(
+              dense: false,
+              leading: ClipRRect(
+                borderRadius: BorderRadius.circular(8.0),
+                child: Image.asset(
+                  'assets/songJacket/$songNo.png',
+                  fit: BoxFit.fill,
+                ),
+              ),
+              title: Text(
+                songTitleKo,
+                overflow: TextOverflow.ellipsis,
+              ),
+              subtitle: Text(
+                songArtistKo,
+              ),
+              onTap: () {
+                Get.toNamed('/songdetail', arguments: songListData[index]);
+              },
+            );
+          } else {
+            return SizedBox(height: 0);
+          }
+        },
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -80,134 +209,8 @@ class _SongListScreenState extends State<SongListScreen> {
       ),
       body: Column(
         children: [
-          Row(
-            children: [
-              Container(
-                padding: EdgeInsets.fromLTRB(20.0, 0.0, 5.0, 5.0),
-                child: DropdownButton<String>(
-                  value: chartType,
-                  icon: Icon(Icons.arrow_downward),
-                  iconSize: 24,
-                  elevation: 16,
-                  underline: Container(
-                    height: 2,
-                    color: Colors.grey,
-                  ),
-                  onChanged: (newValue) {
-                    setState(
-                      () {
-                        chartType = newValue!;
-                        makeLevelList();
-                      },
-                    );
-                  },
-                  items: <String>['ALL', 'S', 'D', 'SP', 'DP', 'CO-OP']
-                      .map<DropdownMenuItem<String>>(
-                    (String value) {
-                      return DropdownMenuItem<String>(
-                        value: value,
-                        child: Text(value),
-                      );
-                    },
-                  ).toList(),
-                ),
-              ),
-              Container(
-                padding: EdgeInsets.fromLTRB(5.0, 0.0, 5.0, 5.0),
-                child: DropdownButton<String>(
-                  value: levelValue,
-                  icon: Icon(Icons.arrow_downward),
-                  iconSize: 24,
-                  elevation: 16,
-                  underline: Container(
-                    height: 2,
-                    color: Colors.grey,
-                  ),
-                  onChanged: (newValue) {
-                    setState(
-                      () {
-                        levelValue = newValue!;
-                        makeSongList();
-                      },
-                    );
-                  },
-                  items: levels.map(
-                    (String value) {
-                      return DropdownMenuItem<String>(
-                        value: value,
-                        child: Text(value),
-                      );
-                    },
-                  ).toList(),
-                ),
-              ),
-              Expanded(
-                child: Container(
-                  padding: EdgeInsets.fromLTRB(5.0, 0.0, 20.0, 5.0),
-                  child: SizedBox(
-                    width: 10,
-                    height: 30,
-                    child: TextFormField(
-                      controller: _searchString,
-                      onChanged: (text) {
-                        setState(
-                          () {
-                            SongListScreen();
-                          },
-                        );
-                      },
-                    ),
-                  ),
-                ),
-              )
-            ],
-          ),
-          Flexible(
-            child: ListView.builder(
-              itemCount: songListData.length,
-              itemBuilder: (BuildContext context, int index) {
-                var songNo = songListData[index]['songNo'];
-                var songTitleKo = songListData[index]['songTitle_ko'];
-                var songTitleEn =
-                    songListData[index]['songTitle_en'].toLowerCase();
-                var songArtistKo = songListData[index]['songArtist_ko'];
-                var songArtistEn =
-                    songListData[index]['songArtist_en'].toLowerCase();
-
-                if ((songNoList[0] == 'ALL' || songNoList.contains(songNo)) &&
-                    (songTitleKo.contains(_searchString.text) ||
-                        songTitleEn
-                            .contains(_searchString.text.toLowerCase()) ||
-                        songArtistKo.contains(_searchString.text) ||
-                        songArtistEn
-                            .contains(_searchString.text.toLowerCase()))) {
-                  return ListTile(
-                    dense: false,
-                    leading: ClipRRect(
-                      borderRadius: BorderRadius.circular(8.0),
-                      child: Image.asset(
-                        'assets/songJacket/$songNo.png',
-                        fit: BoxFit.fill,
-                      ),
-                    ),
-                    title: Text(
-                      songTitleKo,
-                      overflow: TextOverflow.ellipsis,
-                    ),
-                    subtitle: Text(
-                      songArtistKo,
-                    ),
-                    onTap: () {
-                      Get.toNamed('/songdetail',
-                          arguments: songListData[index]);
-                    },
-                  );
-                } else {
-                  return SizedBox(height: 0);
-                }
-              },
-            ),
-          ),
+          searchBar(),
+          songListView(),
         ],
       ),
     );
