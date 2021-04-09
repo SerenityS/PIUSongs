@@ -39,8 +39,117 @@ class _SongDetailScreenState extends State<SongDetailScreen>
     } else {
       throw 'Could not launch $url';
     }
-
     await canLaunch(url) ? await launch(url) : throw 'Could not launch $url';
+  }
+
+  Widget stepChartList() {
+    return Container(
+      child: ListView.builder(
+        itemCount: stepCharts.length,
+        itemBuilder: (BuildContext context, int i) {
+          return Container(
+            child: InkWell(
+              onTap: () {
+                Fluttertoast.showToast(
+                  msg: "길게 클릭하면 채보 영상을 검색합니다.",
+                  toastLength: Toast.LENGTH_SHORT,
+                );
+              },
+              onLongPress: () {
+                _launchYoutube(songData['songTitle_en'], stepCharts[i]);
+              },
+              child: Container(
+                margin: EdgeInsets.fromLTRB(15.0, 5.0, 5.0, 5.0),
+                child: Row(
+                  children: <Widget>[
+                    Image(
+                      image: AssetImage('assets/level/${stepCharts[i]}.png'),
+                      width: 40,
+                      height: 40,
+                      fit: BoxFit.cover,
+                    ),
+                    SizedBox(width: 10),
+                    Text(
+                      "${songData['stepChart'][stepCharts[i]]}",
+                      style: TextStyle(
+                        fontSize: 18,
+                      ),
+                    )
+                  ],
+                ),
+              ),
+            ),
+          );
+        },
+      ),
+    );
+  }
+
+  Widget songDetailInfo() {
+    return SingleChildScrollView(
+      child: Container(
+        margin: EdgeInsets.fromLTRB(18.0, 5.0, 5.0, 5.0),
+        child: Row(
+          children: [
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                for (var item in [
+                  "제목",
+                  "제목(영문명)",
+                  "작곡가",
+                  "작곡가(영문명)",
+                  "BPM",
+                  "유형",
+                  "채널",
+                  "수록버전"
+                ])
+                  Container(
+                    margin: EdgeInsets.only(bottom: 4),
+                    child: SizedBox(
+                      height: 25,
+                      child: Center(
+                        child: Text(
+                          item,
+                          style: TextStyle(fontSize: 16),
+                        ),
+                      ),
+                    ),
+                  ),
+              ],
+            ),
+            SizedBox(width: 20),
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                for (var item in [
+                  songData['songTitle_ko'],
+                  songData['songTitle_en'],
+                  songData['songArtist_ko'],
+                  songData['songArtist_en'],
+                  songData['songBpm'],
+                  songData['songType'],
+                  songData['songSeriesChannel'],
+                  songData['songSeries']
+                ])
+                  Container(
+                    margin: EdgeInsets.only(bottom: 4),
+                    child: SizedBox(
+                      height: 25,
+                      child: Center(
+                        child: Text(
+                          item,
+                          style: TextStyle(fontSize: 16),
+                        ),
+                      ),
+                    ),
+                  ),
+              ],
+            ),
+          ],
+        ),
+      ),
+    );
   }
 
   @override
@@ -110,186 +219,8 @@ class _SongDetailScreenState extends State<SongDetailScreen>
             child: TabBarView(
               controller: _tabController,
               children: [
-                Container(
-                  child: ListView.builder(
-                    itemCount: stepCharts.length,
-                    itemBuilder: (BuildContext context, int i) {
-                      return Container(
-                        child: InkWell(
-                          onTap: () {
-                            Fluttertoast.showToast(
-                              msg: "길게 클릭하면 채보 영상을 검색합니다.",
-                              toastLength: Toast.LENGTH_SHORT,
-                            );
-                          },
-                          onLongPress: () {
-                            _launchYoutube(
-                                songData['songTitle_en'], stepCharts[i]);
-                          },
-                          child: Container(
-                            margin: EdgeInsets.fromLTRB(15.0, 5.0, 5.0, 5.0),
-                            child: Row(
-                              children: <Widget>[
-                                Image(
-                                  image: AssetImage(
-                                      'assets/level/${stepCharts[i]}.png'),
-                                  width: 40,
-                                  height: 40,
-                                  fit: BoxFit.cover,
-                                ),
-                                SizedBox(width: 10),
-                                Text(
-                                  "${songData['stepChart'][stepCharts[i]]}",
-                                  style: TextStyle(
-                                    fontSize: 18,
-                                  ),
-                                )
-                              ],
-                            ),
-                          ),
-                        ),
-                      );
-                    },
-                  ),
-                ),
-                SingleChildScrollView(
-                  child: Container(
-                    margin: EdgeInsets.fromLTRB(18.0, 5.0, 5.0, 5.0),
-                    child: Row(
-                      children: [
-                        Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            SizedBox(
-                                height: 25,
-                                child: Center(
-                                    child: Text("제목",
-                                        style: TextStyle(fontSize: 16)))),
-                            SizedBox(height: 4),
-                            SizedBox(
-                                height: 25,
-                                child: Center(
-                                    child: Text("제목(영문명)",
-                                        style: TextStyle(fontSize: 16)))),
-                            SizedBox(height: 4),
-                            SizedBox(
-                                height: 25,
-                                child: Center(
-                                    child: Text("작곡가",
-                                        style: TextStyle(fontSize: 16)))),
-                            SizedBox(height: 4),
-                            SizedBox(
-                                height: 25,
-                                child: Center(
-                                    child: Text("작곡가(영문명)",
-                                        style: TextStyle(fontSize: 16)))),
-                            SizedBox(height: 4),
-                            SizedBox(
-                                height: 25,
-                                child: Center(
-                                    child: Text("BPM",
-                                        style: TextStyle(fontSize: 16)))),
-                            SizedBox(height: 4),
-                            SizedBox(
-                                height: 25,
-                                child: Center(
-                                    child: Text("유형",
-                                        style: TextStyle(fontSize: 16)))),
-                            SizedBox(height: 4),
-                            SizedBox(
-                                height: 25,
-                                child: Center(
-                                    child: Text("채널",
-                                        style: TextStyle(fontSize: 16)))),
-                            SizedBox(height: 4),
-                            SizedBox(
-                                height: 25,
-                                child: Center(
-                                    child: Text(
-                                  "수록 버전",
-                                  style: TextStyle(fontSize: 16),
-                                ))),
-                          ],
-                        ),
-                        SizedBox(width: 20),
-                        Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            SizedBox(
-                                height: 25,
-                                child: Center(
-                                    child: Text(songData['songTitle_ko'],
-                                        style: TextStyle(
-                                            fontSize: 16,
-                                            color: Colors.black54)))),
-                            SizedBox(height: 4),
-                            SizedBox(
-                                height: 25,
-                                child: Center(
-                                    child: Text(songData['songTitle_en'],
-                                        style: TextStyle(
-                                            fontSize: 16,
-                                            color: Colors.black54)))),
-                            SizedBox(height: 4),
-                            SizedBox(
-                                height: 25,
-                                child: Center(
-                                    child: Text(songData['songArtist_ko'],
-                                        style: TextStyle(
-                                            fontSize: 16,
-                                            color: Colors.black54)))),
-                            SizedBox(height: 4),
-                            SizedBox(
-                                height: 25,
-                                child: Center(
-                                    child: Text(songData['songArtist_en'],
-                                        style: TextStyle(
-                                            fontSize: 16,
-                                            color: Colors.black54)))),
-                            SizedBox(height: 4),
-                            SizedBox(
-                                height: 25,
-                                child: Center(
-                                    child: Text(songData['songBpm'],
-                                        style: TextStyle(
-                                            fontSize: 16,
-                                            color: Colors.black54)))),
-                            SizedBox(height: 4),
-                            SizedBox(
-                                height: 25,
-                                child: Center(
-                                    child: Text(songData['songType'],
-                                        style: TextStyle(
-                                            fontSize: 16,
-                                            color: Colors.black54)))),
-                            SizedBox(height: 4),
-                            SizedBox(
-                              height: 25,
-                              child: Center(
-                                child: Text(
-                                  songData['songSeriesChannel'],
-                                  style: TextStyle(
-                                      fontSize: 16, color: Colors.black54),
-                                ),
-                              ),
-                            ),
-                            SizedBox(height: 4),
-                            SizedBox(
-                              height: 25,
-                              child: Center(
-                                child: Text(
-                                  songData['songSeries'],
-                                  style: TextStyle(
-                                      fontSize: 16, color: Colors.black54),
-                                ),
-                              ),
-                            ),
-                          ],
-                        )
-                      ],
-                    ),
-                  ),
-                )
+                stepChartList(),
+                songDetailInfo(),
               ],
             ),
           ),
