@@ -28,6 +28,12 @@ class _SongListScreenState extends State<SongListScreen> {
     makeLevelList();
   }
 
+  @override
+  void dispose() {
+    super.dispose();
+    _searchString.dispose();
+  }
+
   Future loadSongJsonData() async {
     var jsonText = await rootBundle.loadString('assets/json/songLists.json');
     setState(
