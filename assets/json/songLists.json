@@ -11633,15 +11633,15 @@
         "songTitle_ko": "크로싱 델타",
         "songType": "Arcade",
         "stepChart": {
-            "D03": "SPHAM",
-            "D04": "SPHAM",
-            "D05": "SPHAM",
-            "D06": "SPHAM",
-            "DP01": "SPHAM",
-            "S01": "SPHAM",
-            "S02": "SPHAM",
-            "S03": "SPHAM",
-            "S04": "SPHAM"
+            "C02": "SPHAM",
+            "D13": "SPHAM",
+            "D17": "SPHAM",
+            "D21": "SPHAM",
+            "D23": "SPHAM",
+            "S10": "SPHAM",
+            "S12": "SPHAM",
+            "S16": "SPHAM",
+            "S20": "SPHAM"
         }
     },
     {
