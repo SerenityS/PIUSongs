@@ -170,7 +170,7 @@ class _SongDetailScreenState extends State<SongDetailScreen>
               "${songData['songTitle_ko']}",
               style: TextStyle(
                 fontSize: 25,
-                fontWeight: FontWeight.bold,
+                fontWeight: FontWeight.w700,
               ),
             ),
           ),

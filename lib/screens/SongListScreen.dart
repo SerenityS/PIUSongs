@@ -191,6 +191,9 @@ class _SongListScreenState extends State<SongListScreen> {
               title: Text(
                 songTitleKo,
                 overflow: TextOverflow.ellipsis,
+                style: TextStyle(
+                  fontWeight: FontWeight.w500
+                ),
               ),
               subtitle: Text(
                 songArtistKo,

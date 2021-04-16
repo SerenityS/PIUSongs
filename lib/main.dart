@@ -26,10 +26,11 @@ class MyApp extends StatelessWidget {
             headline6: TextStyle(
               color: Colors.black,
               fontSize: 20,
-              fontWeight: FontWeight.bold,
+              fontWeight: FontWeight.w700,
             ),
           ),
         ),
+        fontFamily: 'SourceHanSans',
         scaffoldBackgroundColor: Colors.white,
         primarySwatch: Colors.grey,
         primaryIconTheme: IconThemeData(
