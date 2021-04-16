@@ -105,7 +105,12 @@ class _SongListScreenState extends State<SongListScreen> {
               (String value) {
                 return DropdownMenuItem<String>(
                   value: value,
-                  child: Text(value),
+                  child: Container(
+                    alignment: Alignment.center,
+                    child: Text(
+                      value,
+                    ),
+                  ),
                 );
               },
             ).toList(),
@@ -134,7 +139,12 @@ class _SongListScreenState extends State<SongListScreen> {
               (String value) {
                 return DropdownMenuItem<String>(
                   value: value,
-                  child: Text(value),
+                  child: Container(
+                    alignment: Alignment.center,
+                    child: Text(
+                      value,
+                    ),
+                  ),
                 );
               },
             ).toList(),
