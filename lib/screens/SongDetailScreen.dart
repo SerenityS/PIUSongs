@@ -34,11 +34,6 @@ class _SongDetailScreenState extends State<SongDetailScreen>
     String searchArgs = title + " " + level;
     String url =
         'https://m.youtube.com/results?sp=mAEA&search_query=$searchArgs';
-    if (await canLaunch(url)) {
-      await launch(url);
-    } else {
-      throw 'Could not launch $url';
-    }
     await canLaunch(url) ? await launch(url) : throw 'Could not launch $url';
   }
 
