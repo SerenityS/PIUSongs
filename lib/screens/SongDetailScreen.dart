@@ -27,12 +27,12 @@ class _SongDetailScreenState extends State<SongDetailScreen>
     _tabController.dispose();
   }
 
-  _launchYoutube(title, level) async {
+  void _launchYoutube(title, level) async {
     if (level.contains('C')) {
       level = 'Co-Op';
     }
-    String searchArgs = title + " " + level;
-    String url =
+    String searchArgs = title + ' ' + level;
+    var url =
         'https://m.youtube.com/results?sp=mAEA&search_query=$searchArgs';
     await canLaunch(url) ? await launch(url) : throw 'Could not launch $url';
   }
@@ -46,7 +46,7 @@ class _SongDetailScreenState extends State<SongDetailScreen>
             child: InkWell(
               onTap: () {
                 Fluttertoast.showToast(
-                  msg: "길게 클릭하면 채보 영상을 검색합니다.",
+                  msg: '길게 클릭하면 채보 영상을 검색합니다.',
                   toastLength: Toast.LENGTH_SHORT,
                 );
               },
@@ -90,14 +90,14 @@ class _SongDetailScreenState extends State<SongDetailScreen>
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 for (var item in [
-                  "제목",
-                  "제목(영문명)",
-                  "작곡가",
-                  "작곡가(영문명)",
-                  "BPM",
-                  "유형",
-                  "채널",
-                  "수록버전"
+                  '제목',
+                  '제목(영문명)',
+                  '작곡가',
+                  '작곡가(영문명)',
+                  'BPM',
+                  '유형',
+                  '채널',
+                  '수록버전'
                 ])
                   Container(
                     margin: EdgeInsets.only(bottom: 4),
@@ -204,8 +204,8 @@ class _SongDetailScreenState extends State<SongDetailScreen>
                   fontWeight: FontWeight.w700),
               controller: _tabController,
               tabs: [
-                Tab(text: "채보 목록"),
-                Tab(text: "상세 정보"),
+                Tab(text: '채보 목록'),
+                Tab(text: '상세 정보'),
               ],
             ),
           ),

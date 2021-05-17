@@ -10,7 +10,7 @@ class SongListScreen extends StatefulWidget {
 }
 
 class _SongListScreenState extends State<SongListScreen> {
-  TextEditingController _searchString = new TextEditingController();
+  final TextEditingController _searchString = TextEditingController();
 
   String chartType = 'ALL';
   String levelValue = 'ALL';
@@ -41,7 +41,7 @@ class _SongListScreenState extends State<SongListScreen> {
     );
   }
 
-  makeLevelList() async {
+  void makeLevelList() async {
     if (chartType == 'ALL') {
       setState(
         () {
@@ -66,7 +66,7 @@ class _SongListScreenState extends State<SongListScreen> {
     makeSongList();
   }
 
-  makeSongList() {
+  void makeSongList() {
     if (chartType == 'ALL') {
       songNoList = ['ALL'];
     } else {
@@ -222,7 +222,7 @@ class _SongListScreenState extends State<SongListScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("PIU Songs"),
+        title: const Text('PIU Songs'),
       ),
       body: Column(
         children: [

@@ -41,8 +41,8 @@ class MyApp extends StatelessWidget {
       title: 'PIU Songs',
       initialRoute: '/songlist',
       getPages: [
-        GetPage(name: '/songlist', page: () => SongListScreen()),
         GetPage(name: '/songdetail', page: () => SongDetailScreen()),
+        GetPage(name: '/songlist', page: () => SongListScreen()),
       ],
     );
   }
