@@ -12,6 +12,7 @@
         "songTitle_ko": "또다른 진심",
         "songType": "Arcade",
         "stepChart": {
+            "C02": "SUNNY",
             "D07": "ANDAMIRO",
             "D17": "ANDAMIRO",
             "D18": "BPM",
@@ -84,6 +85,7 @@
         "songType": "Remix",
         "stepChart": {
             "D08": "ANDAMIRO",
+            "D22": "SUNNY",
             "S07": "ANDAMIRO",
             "S18": "HP"
         }
@@ -247,6 +249,8 @@
         "stepChart": {
             "D15": "ANDAMIRO",
             "DP03": "ANDAMIRO",
+            "S05": "SUNNY",
+            "S09": "SUNNY",
             "S13": "HP",
             "SP01": "ANDAMIRO"
         }
@@ -306,6 +310,7 @@
         "stepChart": {
             "D15": "BME",
             "S04": "ANDAMIRO",
+            "S09": "SUNNY",
             "S12": "HP"
         }
     },
@@ -413,6 +418,7 @@
         "stepChart": {
             "D16": "ANDAMIRO",
             "D17": "ANDAMIRO",
+            "D22": "SUNNY",
             "D23": "ANDAMIRO",
             "S03": "HP",
             "S05": "ANDAMIRO",
@@ -839,6 +845,7 @@
             "D18": "OSING",
             "DP06": "ANDAMIRO",
             "S07": "ANDAMIRO",
+            "S11": "SUNNY",
             "S15": "ANDAMIRO",
             "SP04": "ANDAMIRO"
         }
@@ -1357,9 +1364,11 @@
         "stepChart": {
             "D12": "ANDAMIRO",
             "D18": "ANDAMIRO",
+            "D23": "SUNNY",
             "S04": "ANDAMIRO",
             "S08": "ANDAMIRO",
-            "S15": "ANDAMIRO"
+            "S15": "ANDAMIRO",
+            "S21": "SUNNY"
         }
     },
     {
@@ -1662,10 +1671,12 @@
         "stepChart": {
             "D07": "ANDAMIRO",
             "D18": "ANDAMIRO",
+            "D23": "WINDFORCE",
             "S04": "HP",
             "S06": "ANDAMIRO",
             "S08": "HP",
-            "S16": "ANDAMIRO"
+            "S16": "ANDAMIRO",
+            "S22": "WINDFORCE"
         }
     },
     {
@@ -1904,7 +1915,8 @@
             "D18": "EHNE",
             "S03": "HP",
             "S05": "HP",
-            "S09": "HP"
+            "S09": "HP",
+            "S17": "HP"
         }
     },
     {
@@ -2365,6 +2377,7 @@
             "D03": "ANDAMIRO",
             "D16": "EHNE",
             "S06": "EHNE",
+            "S12": "SUNNY",
             "S17": "BPM",
             "SP01": "ANDAMIRO"
         }
@@ -2382,6 +2395,7 @@
         "songTitle_ko": "사람들은 몰랐다네",
         "songType": "Arcade",
         "stepChart": {
+            "C02": "SUNNY",
             "D07": "BPM",
             "D17": "BPM",
             "S03": "BPM",
@@ -4119,6 +4133,7 @@
             "S04": "HP",
             "S07": "HP",
             "S11": "HP",
+            "S18": "SUNNY",
             "S21": "EXC"
         }
     },
@@ -5574,6 +5589,7 @@
             "D13": "EXC",
             "D18": "FEFEMZ",
             "D21": "EXC",
+            "D23": "AEVILUX",
             "DP04": "CASHEW",
             "S07": "NIMGO",
             "S11": "EXC",
@@ -5993,6 +6009,7 @@
         "songTitle_ko": "요로피쿠 피쿠요로!",
         "songType": "Arcade",
         "stepChart": {
+            "C02": "SUNNY",
             "D05": "EXC",
             "D16": "EXC",
             "DP04": "IMBA",
@@ -7227,6 +7244,7 @@
         "songTitle_ko": "알레그로 퓨리오소",
         "songType": "Arcade",
         "stepChart": {
+            "C03": "SUNNY",
             "D15": "EXC",
             "D20": "EXC",
             "DP04": "KAZEMURA",
@@ -7828,6 +7846,7 @@
             "D11": "CONRAD",
             "D17": "CONRAD",
             "D20": "CONRAD",
+            "D22": "NIMGO",
             "DP03": "KAHRUNYA",
             "S03": "CONRAD",
             "S07": "CONRAD",
@@ -8090,6 +8109,7 @@
             "D09": "AYAPPING",
             "D12": "AYAPPING",
             "D17": "AYAPPING",
+            "D21": "AEVILUX",
             "DP04": "Z_AL",
             "S07": "AYAPPING",
             "S09": "AYAPPING",
@@ -8744,7 +8764,8 @@
             "DP04": "KAZEMURA",
             "S16": "FEFEMZ",
             "S21": "FEFEMZ",
-            "S23": "FEFEMZ"
+            "S23": "FEFEMZ",
+            "S26": "WINDFORCE"
         }
     },
     {
@@ -9918,6 +9939,7 @@
         "songTitle_ko": "별이 빛나는 밤",
         "songType": "Arcade",
         "stepChart": {
+            "C02": "SUNNY",
             "D07": "CONRAD",
             "D15": "CONRAD",
             "D17": "CONRAD",
@@ -10304,6 +10326,7 @@
         "songTitle_ko": "프라임 타임",
         "songType": "Remix",
         "stepChart": {
+            "D21": "AEVILUX",
             "D23": "AEVILUX",
             "D26": "AEVILUX",
             "DP24": "AEVILUX",
@@ -10350,6 +10373,7 @@
             "D13": "SPHAM",
             "D18": "SPHAM",
             "D21": "SPHAM",
+            "D22": "AEVILUX",
             "DP03": "BEDROCK",
             "S11": "SPHAM",
             "S15": "SPHAM",
@@ -10741,6 +10765,7 @@
             "D20": "AEVILUX",
             "D21": "AEVILUX",
             "D22": "AEVILUX",
+            "D25": "AEVILUX",
             "DP05": "ZELLLOOO",
             "S08": "AEVILUX",
             "S13": "AEVILUX",
@@ -10906,6 +10931,7 @@
             "D15": "FEFEMZ",
             "D18": "FEFEMZ",
             "D21": "FEFEMZ",
+            "D23": "CONRAD",
             "DP03": "HARU-KAZE",
             "S08": "FEFEMZ",
             "S12": "FEFEMZ",
@@ -11337,6 +11363,7 @@
         "songType": "Arcade",
         "stepChart": {
             "D14": "FEFEMZ",
+            "D18": "SUNNY",
             "D21": "FEFEMZ",
             "S11": "FEFEMZ",
             "S15": "FEFEMZ",
@@ -11657,31 +11684,158 @@
         "songTitle_ko": "아마겟돈",
         "songType": "Arcade",
         "stepChart": {
+            "D13": "SUNNY",
+            "D21": "SUNNY",
+            "D24": "SUNNY",
             "S04": "SUNNY",
             "S06": "SUNNY",
             "S10": "SUNNY",
             "S16": "SUNNY",
             "S19": "SUNNY",
-            "S22": "SUNNY",
-            "D13": "SUNNY",
-            "D21": "SUNNY",
-            "D24": "SUNNY"
+            "S22": "SUNNY"
         }
     },
     {
-        "songArtist_en": "https://github.com/SerenityS",
-        "songArtist_ko": "qwertycvb",
-        "songBpm": "9999999999",
-        "songChannel": "Developer",
+        "songArtist_en": "Mr. Weq",
+        "songArtist_ko": "Mr. Weq",
+        "songBpm": "170",
+        "songChannel": "Original",
         "songID": "",
-        "songNo": 9999,
-        "songSeries": "The 1st Dance Floor(1999)",
-        "songSeriesChannel": "컴퓨터공학과",
-        "songTitle_en": "Developer",
-        "songTitle_ko": "HeeRyun, Jin",
-        "songType": "대학생",
+        "songNo": 7497,
+        "songSeries": "XX",
+        "songSeriesChannel": "XX",
+        "songTitle_en": "Sugar Plum",
+        "songTitle_ko": "슈가 플럼",
+        "songType": "Arcade",
         "stepChart": {
-            "S23" : "qwertycvb"
+            "C02": "SUNNY",
+            "D11": "SUNNY",
+            "D16": "SUNNY",
+            "D20": "SUNNY",
+            "S04": "SUNNY",
+            "S07": "SUNNY",
+            "S11": "SUNNY",
+            "S15": "SUNNY",
+            "S18": "SUNNY"
+        }
+    },
+    {
+        "songArtist_en": "Koharu feat. Renyata",
+        "songArtist_ko": "Koharu feat. Renyata",
+        "songBpm": "200",
+        "songChannel": "Original",
+        "songID": "",
+        "songNo": 7498,
+        "songSeries": "XX",
+        "songSeriesChannel": "XX",
+        "songTitle_en": "Telling Fortune Flower",
+        "songTitle_ko": "텔링 포츈 플라워",
+        "songType": "Arcade",
+        "stepChart": {
+            "D13": "NIMGO",
+            "D20": "NIMGO",
+            "D23": "NIMGO",
+            "D26": "NIMGO",
+            "S10": "NIMGO",
+            "S13": "NIMGO",
+            "S17": "NIMGO",
+            "S19": "NIMGO",
+            "S21": "NIMGO",
+            "S23": "NIMGO"
+        }
+    },
+    {
+        "songArtist_en": "Croire",
+        "songArtist_ko": "Croire",
+        "songBpm": "245",
+        "songChannel": "World Music",
+        "songID": "",
+        "songNo": 7499,
+        "songSeries": "XX",
+        "songSeriesChannel": "XX",
+        "songTitle_en": "GLORIA",
+        "songTitle_ko": "글로리아",
+        "songType": "Arcade",
+        "stepChart": {
+            "D16": "CONRAD",
+            "D18": "CONRAD",
+            "D21": "CONRAD",
+            "D24": "CONRAD",
+            "S10": "CONRAD",
+            "S14": "CONRAD",
+            "S17": "CONRAD",
+            "S20": "CONRAD",
+            "S23": "CONRAD"
+        }
+    },
+    {
+        "songArtist_en": "Abel",
+        "songArtist_ko": "Abel",
+        "songBpm": "240",
+        "songChannel": "Original",
+        "songID": "",
+        "songNo": 7500,
+        "songSeries": "XX",
+        "songSeriesChannel": "XX",
+        "songTitle_en": "Repentance",
+        "songTitle_ko": "리펜턴스",
+        "songType": "Arcade",
+        "stepChart": {
+            "D12": "WINDFORCE",
+            "D17": "WINDFORCE",
+            "D20": "WINDFORCE",
+            "D23": "WINDFORCE",
+            "D26": "WINDFORCE",
+            "S06": "WINDFORCE",
+            "S10": "WINDFORCE",
+            "S16": "WINDFORCE",
+            "S19": "WINDFORCE",
+            "S22": "WINDFORCE"
+        }
+    },
+    {
+        "songArtist_en": "A:llhα (ANE + 2riA)",
+        "songArtist_ko": "A:llhα (ANE + 2riA)",
+        "songBpm": "215",
+        "songChannel": "World Music",
+        "songID": "",
+        "songNo": 7501,
+        "songSeries": "XX",
+        "songSeriesChannel": "XX",
+        "songTitle_en": "Kokugen Kairou Labyrinth",
+        "songTitle_ko": "시간의 회랑 라비린스",
+        "songType": "Arcade",
+        "stepChart": {
+            "D18": "CONRAD",
+            "D22": "CONRAD",
+            "D26": "CONRAD",
+            "S09": "CONRAD",
+            "S12": "CONRAD",
+            "S15": "CONRAD",
+            "S17": "CONRAD",
+            "S20": "CONRAD",
+            "S23": "CONRAD"
+        }
+    },
+    {
+        "songArtist_en": "Yakikaze & Cashew",
+        "songArtist_ko": "Yakikaze & Cashew",
+        "songBpm": "128",
+        "songChannel": "Original",
+        "songID": "",
+        "songNo": 7502,
+        "songSeries": "XX",
+        "songSeriesChannel": "XX",
+        "songTitle_en": "Papasito (feat. KuTiNA) - FULL SONG -",
+        "songTitle_ko": "파파시토 (feat. KuTiNA) - FULL SONG -",
+        "songType": "Full Song",
+        "stepChart": {
+            "D14": "AEVILUX",
+            "D21": "AEVILUX",
+            "D23": "AEVILUX",
+            "S12": "AEVILUX",
+            "S19": "AEVILUX",
+            "S22": "AEVILUX"
         }
     }
 ]
